@@ -6,12 +6,22 @@
 
 /* ── 字体 ─────────────────────────────────────────────────── */
 
+/* 字体声明。
+ *
+ * ⚠ 这一块曾经整段缺失 —— 上一轮改造时用正则删掉了原字体的 @font-face，
+ *   但新的没插进去，导致落地页从未加载过本字体，一直在回退到 Songti SC。
+ *   只验 HTTP 200 和 DOM 结构是查不出这个的。
+ *
+ * 本字体只有一个字重（400）。页面里出现的 350 / 600 / 900 等字重
+ * 由浏览器合成（faux bold），不是真实字重。 */
+@font-face{font-family:'Xi Mo Cai SC';src:url('fonts/ximocai-regular.woff2') format('woff2');font-weight:400;font-display:swap}
+
 :root{
   --paper:#EFE7DA; --paper2:#F6F1E7; --ink:#14100E; --ink2:#2A211B; --ink3:#6B5C51;
   --red:#B03A2E; --red-d:#8C1F28; --gold:#C9A961; --green:#4A5F55;
   --line:rgba(20,16,14,.14); --line2:rgba(20,16,14,.26);
-  --hei:'Xi Mo Li SC','Songti SC','Source Han Serif SC','Noto Serif SC',STSong,SimSun,serif;
-  --song:'Xi Mo Li SC','Songti SC','Source Han Serif SC','Noto Serif SC',STSong,SimSun,serif;
+  --hei:'Xi Mo Cai SC','Songti SC','Source Han Serif SC','Noto Serif SC',STSong,SimSun,serif;
+  --song:'Xi Mo Cai SC','Songti SC','Source Han Serif SC','Noto Serif SC',STSong,SimSun,serif;
   --max:1120px;
 }
 

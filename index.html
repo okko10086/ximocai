@@ -2,11 +2,11 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="戏墨隶 SC —— 基于思源宋体改造的隶书笔意中文字体，20992 个基本区汉字，支持竖排，SIL OFL 1.1 免费商用。">
-<title>戏墨隶 SC · 一款隶书笔意的开源中文字体</title>
-<meta name="description" content="戏墨隶 SC —— 基于思源宋体，用骨架提取与就地推拉生成的隶书笔意中文字体。20992 个基本区汉字，支持竖排，SIL OFL 1.1 免费商用。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>戏墨彩 SC · 一款扁方重彩的开源中文字体</title>
+<meta name="description" content="戏墨彩 SC —— 基于思源宋体，用骨架提取与就地推拉生成的扁方重彩中文字体。整体压扁 12%、横画加粗 85%，20992 个基本区汉字，支持竖排，SIL OFL 1.1 免费商用。">
 <link rel="stylesheet" href="style.css">
-<link rel="preload" href="fonts/ximoli-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ximocai-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="img/seal.png">
 </head>
 <body>
@@ -20,11 +20,12 @@
       <span class="vnote">扁方<span class="dot">·</span>横粗竖细<span class="dot">·</span>一波三折</span>
     </div>
 
-    <h1 class="hero-title">戏墨隶</h1>
+    <h1 class="hero-title">戏墨彩</h1>
 
     <p class="hero-lede">
-      一款<b>隶书笔意</b>的宋体变体。<br>
-      由思源宋体改造：骨架提取 + 就地推拉，<em>拓扑不变</em>，
+      一款<b>扁方重彩</b>的宋体变体。<br>
+      整体压扁 <em>12%</em>、横画加粗 <em>85%</em> ——
+      由思源宋体经骨架分析就地推拉生成，<em>拓扑不变</em>，
       覆盖 <em>20,992</em> 个基本区汉字。
     </p>
 
@@ -54,16 +55,16 @@
     <div class="two">
       <div class="col prose">
         <p>思源宋体的轮廓早已合并——一个「十」字只有一条闭合轮廓，横竖笔画焊成一体，
-          因此无法按单条笔画加粗减细。戏墨隶的全部改造，通过<em>全局坐标变形</em>完成。</p>
+          因此无法按单条笔画加粗减细。戏墨彩的全部改造，通过<em>全局坐标变形</em>完成。</p>
         <p>汉字设计的核心杠杆是中宫。思源宋体同样带日文字体基因，中宫偏松。
-          戏墨隶把它收紧、把字面放大——<em>中宫更紧、字面更饱满</em>是它唯一的识别特征。</p>
+          戏墨彩把它收紧、把字面放大——<em>中宫更紧、字面更饱满</em>是它唯一的识别特征。</p>
         <p class="quiet">与黑体姊妹款的区别在于<em>少一个旋钮</em>：戏墨黑加笔画对比（横细竖粗），
-          戏墨隶<em>不加</em>。原因见卷四——宋体的横画只有 33 单位厚，没有余量可削。</p>
+          戏墨彩<em>不加</em>。原因见卷四——宋体的横画只有 33 单位厚，没有余量可削。</p>
       </div>
 
       <div class="col">
         <figure class="fig">
-          <img src="img/spec-compare.png" alt="思源宋体与戏墨隶的字面实测对比">
+          <img src="img/spec-compare.png" alt="思源宋体与戏墨彩的字面实测对比">
           <figcaption>同一字号下「国」字的墨迹范围实测对比。框线由程序按 alpha&gt;64 量出，不是目测。</figcaption>
         </figure>
       </div>
@@ -108,17 +109,17 @@
         <span>字号 <b id="sizeOut">64</b> px</span>
         <input id="sizeRange" type="range" min="28" max="132" value="64" step="2">
       </label>
-      <p class="hint">下面每一行都是真正的字体文件在渲染，不是图片。上排是思源宋体，下排是戏墨隶 —— 同一句话、同一个字号，可以直接比对。</p>
+      <p class="hint">下面每一行都是真正的字体文件在渲染，不是图片。上排是思源宋体，下排是戏墨彩 —— 同一句话、同一个字号，可以直接比对。</p>
     </div>
 
     <div class="weights" id="weightsBox">
       <div class="wrow"><span class="wlab">思源宋体<i>原</i></span>
         <p style="font-family:'Songti SC','Source Han Serif SC',serif">山川异域，风月同天</p></div>
-      <div class="wrow" data-w="400"><span class="wlab">戏墨隶<i>SC</i></span>
+      <div class="wrow" data-w="400"><span class="wlab">戏墨彩<i>SC</i></span>
         <p style="font-weight:400">山川异域，风月同天</p></div>
       <div class="wrow"><span class="wlab">思源宋体<i>原</i></span>
         <p style="font-family:'Songti SC','Source Han Serif SC',serif">永和九年，岁在癸丑</p></div>
-      <div class="wrow" data-w="400"><span class="wlab">戏墨隶<i>SC</i></span>
+      <div class="wrow" data-w="400"><span class="wlab">戏墨彩<i>SC</i></span>
         <p style="font-weight:400">永和九年，岁在癸丑</p></div>
     </div>
   </div>
@@ -130,19 +131,29 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="vol">卷三</span>
-      <h2>它离隶书有多远</h2>
-      <span class="en">HOW CLOSE TO LISHU</span>
+      <h2>它做了什么，没做什么</h2>
+      <span class="en">WHAT IT DOES</span>
     </div>
 
     <div class="two">
       <div class="col prose">
-        <p>先说清楚：这是一款<b>隶书笔意的宋体变体</b>，<em>不是汉隶字库的复刻</em>。</p>
-        <p><b>做得到的</b>：扁方字形、横粗竖细、横画走向起伏、笔画端部的外扩变化。</p>
-        <p><b>做不到的</b>：隶书的结构性特征 —— <b>部件分背</b>（笔画常不相连）、
-          <b>结构重排</b>，以及书法意义上的蚕头燕尾笔锋。</p>
-        <p class="quiet">原因在生成方式：本字体是在<b>思源宋体的骨架上就地推拉</b>。
-          骨架来自宋体，所以字的<em>结构</em>仍是宋体，改变的只是<em>厚度分布与走向</em>。
-          要让结构变成隶书，只能从公有领域的碑刻手工描摹，那是另一个量级的工作。</p>
+        <p>先说清楚：这是<b>宋体的一个变体</b>，<em>不是新书体</em>。
+          它不是隶书、不是楷书、不是魏碑，也无意冒充任何一种书法字体。</p>
+        <p>它只做一件事：<b>在宋体的骨架上重新分配墨量</b>。</p>
+        <table class="spec-table" style="margin:.9rem 0">
+          <tbody>
+            <tr><th>整体压扁</th><td>−12%</td></tr>
+            <tr><th>横画加粗</th><td>+85%</td></tr>
+            <tr><th>竖画减细</th><td>−14%</td></tr>
+            <tr><th>横画走向起伏</th><td>小幅正弦调制</td></tr>
+            <tr><th>笔画端部外扩</th><td>端部附近宽度渐变</td></tr>
+          </tbody>
+        </table>
+        <p class="quiet">适合<b>标题、封面、招牌</b>这类需要「压得住」的场合；
+          正文长文会因为横画偏重而略显沉。</p>
+        <p><b>边界</b>：字的结构完全来自思源宋体，本字体只改厚度分布与走向。
+          骨架分析是全自动的，它能保证「不变形」，但<em>不能产生新的书写性</em> ——
+          笔画之间的呼应、起收笔的笔势，这些是手工设计才有的东西。</p>
       </div>
 
       <div class="col">
@@ -213,7 +224,7 @@
     </div>
 
     <div class="try-bar">
-      <input id="tryInput" type="text" value="戏墨隶 免费商用 四字重" aria-label="试写内容" maxlength="40">
+      <input id="tryInput" type="text" value="戏墨彩 免费商用 四字重" aria-label="试写内容" maxlength="40">
       <div class="try-ctl">
         <div class="seg" id="tryWeights" role="group" aria-label="字重">
           <button data-w="400" class="on">标</button><button data-w="500">中</button><button data-w="600">半</button><button data-w="900">特</button>
@@ -225,7 +236,7 @@
     </div>
 
     <div class="try-stage" id="tryStage">
-      <p class="try-text" id="tryText">戏墨隶 免费商用 四字重</p>
+      <p class="try-text" id="tryText">戏墨彩 免费商用 四字重</p>
     </div>
 
     <p class="hint" id="tryHint">正在按需载入 GB2312 完整字库（约 2.5 MB）——载入前显示的是页面子集。</p>
@@ -271,16 +282,16 @@
             <li>在衍生字体中使用保留字体名</li>
             <li>以 Adobe 名义做宣传背书</li>
           </ul>
-          <p class="quiet">保留字体名：<code>Xi Mo Li</code> · <code>Xi Mo Li SC</code> ·
-            <code>戏墨隶</code> · <code>戏墨隶 SC</code>。</p>
+          <p class="quiet">保留字体名：<code>Xi Mo Cai</code> · <code>Xi Mo Cai SC</code> ·
+            <code>戏墨彩</code> · <code>戏墨彩 SC</code>。</p>
         </div>
 
         <div class="dl">
-          <a class="btn" href="fonts/full-ximoli-regular.woff2" download>下载网页字体 (WOFF2)</a>
+          <a class="btn" href="fonts/full-ximocai-regular.woff2" download>下载网页字体 (WOFF2)</a>
           <a class="btn" href="使用须知.html">能商用吗？使用须知</a>
           <a class="btn ghost" href="OFL.txt" target="_blank" rel="noopener">阅读 OFL 1.1 全文</a>
-          <a class="btn" href="https://github.com/okko10086/ximoli/releases/latest" target="_blank" rel="noopener">下载桌面 OTF（11.8 MB）</a>
-          <p class="quiet">桌面字体含 31,058 字形，装进系统后在 Word / Photoshop / Figma 里直接选用「戏墨隶 SC」。网页字体只含子集。</p>
+          <a class="btn" href="https://github.com/okko10086/ximocai/releases/latest" target="_blank" rel="noopener">下载桌面 OTF（11.8 MB）</a>
+          <p class="quiet">桌面字体含 31,058 字形，装进系统后在 Word / Photoshop / Figma 里直接选用「戏墨彩 SC」。网页字体只含子集。</p>
         </div>
       </div>
     </div>
@@ -306,7 +317,7 @@
     </div>
     <div class="foot-line">
       <span><a href="https://okko10086.github.io/ximosong/">姊妹款：戏墨宋 SC →</a></span>
-      <span>戏墨隶 · 2026</span>
+      <span>戏墨彩 · 2026</span>
       <span>SIL OFL 1.1</span>
     </div>
   </div>
