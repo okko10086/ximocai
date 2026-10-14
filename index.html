@@ -55,11 +55,13 @@
     <div class="two">
       <div class="col prose">
         <p>思源宋体的轮廓早已合并——一个「十」字只有一条闭合轮廓，横竖笔画焊成一体，
-          因此无法按单条笔画加粗减细。戏墨彩的全部改造，通过<em>全局坐标变形</em>完成。</p>
-        <p>汉字设计的核心杠杆是中宫。思源宋体同样带日文字体基因，中宫偏松。
-          戏墨彩把它收紧、把字面放大——<em>中宫更紧、字面更饱满</em>是它唯一的识别特征。</p>
-        <p class="quiet">与黑体姊妹款的区别在于<em>少一个旋钮</em>：戏墨黑加笔画对比（横细竖粗），
-          戏墨彩<em>不加</em>。原因见卷四——宋体的横画只有 33 单位厚，没有余量可削。</p>
+          因此无法按单条笔画加粗减细。戏墨彩不走「拆笔画重画」那条路，
+          而是<em>在原轮廓上就地推拉</em>：每个点沿法线推开，位移等于局部厚度的变化量。</p>
+        <p>它的调性是<em>扁方重彩</em>。整体压扁 12% 让字身横阔，
+          横画加粗 85%、竖画减细 14% 把对比拉开——
+          <em>横重、字阔、对比强</em>是它最直接的识别特征。</p>
+        <p class="quiet">与姊妹款的区别：戏墨黑（黑体）与戏墨宋（宋体）只做全局坐标变形，
+          <em>不动笔画厚度</em>；戏墨彩直接改厚度分布，所以横画明显更重、字身明显更扁。</p>
       </div>
 
       <div class="col">
@@ -72,24 +74,24 @@
 
     <div class="spec-row">
       <div class="spec">
-        <span class="num">0.09</span>
-        <span class="lab">中宫收紧 k</span>
-        <p>局部缩放率建模，笔画只渐变变细，绝不增粗。</p>
+        <span class="num">0.88</span>
+        <span class="lab">纵向压扁</span>
+        <p>扁方的来源。字身横阔，视觉重心下沉。</p>
       </div>
       <div class="spec">
-        <span class="num">+3.4<span class="pc">%</span></span>
-        <span class="lab">墨迹面积变化</span>
-        <p>「国」字实测：字面放大，比源字体更饱满。</p>
+        <span class="num">×1.85</span>
+        <span class="lab">横画加粗</span>
+        <p>与竖画 ×0.86 配合，把横竖对比拉开。</p>
       </div>
       <div class="spec">
-        <span class="num">1.055</span>
-        <span class="lab">横向缩放 sx</span>
-        <p>与 sy=1.045 配合，保持宋体方正偏扁的本性。</p>
+        <span class="num">91.0<span class="pc">%</span></span>
+        <span class="lab">字怀保持率</span>
+        <p>400 个随机常用字实测，比对源字体的内白个数。</p>
       </div>
       <div class="spec">
-        <span class="num">186324</span>
-        <span class="lab">全量校验字形</span>
-        <p>六个字重逐字形绘制并重编译，零失败。</p>
+        <span class="num">2500</span>
+        <span class="lab">几何校验字形</span>
+        <p>零空字形、零越界、零绘制异常。</p>
       </div>
     </div>
   </div>
@@ -224,7 +226,7 @@
     </div>
 
     <div class="try-bar">
-      <input id="tryInput" type="text" value="戏墨彩 免费商用 四字重" aria-label="试写内容" maxlength="40">
+      <input id="tryInput" type="text" value="戏墨彩 免费商用 单字重" aria-label="试写内容" maxlength="40">
       <div class="try-ctl">
         <div class="seg" id="tryWeights" role="group" aria-label="字重">
           <button data-w="400" class="on">标</button><button data-w="500">中</button><button data-w="600">半</button><button data-w="900">特</button>
@@ -236,7 +238,7 @@
     </div>
 
     <div class="try-stage" id="tryStage">
-      <p class="try-text" id="tryText">戏墨彩 免费商用 四字重</p>
+      <p class="try-text" id="tryText">戏墨彩 免费商用 单字重</p>
     </div>
 
     <p class="hint" id="tryHint">正在按需载入 GB2312 完整字库（约 2.5 MB）——载入前显示的是页面子集。</p>
@@ -262,7 +264,7 @@
             <tr><th>汉字</th><td>基本区 20,992 + 扩展 A 区 6,592</td></tr>
             <tr><th>拉丁 / 注音 / 假名 / 谚文</th><td>全套</td></tr>
             <tr><th>桌面格式</th><td>OTF（CFF），约 11.8 MB</td></tr>
-            <tr><th>网页格式</th><td>WOFF2；站点子集 790 字符 / 268 KB，GB2312 子集 7,771 字符 / 2.5 MB</td></tr>
+            <tr><th>网页格式</th><td>WOFF2；站点子集 786 字符 / 266 KB，GB2312 子集 7,771 字符 / 2.5 MB</td></tr>
             <tr><th>竖排</th><td>vhea / vmtx 完整保留</td></tr>
             <tr><th>授权</th><td>SIL Open Font License 1.1</td></tr>
           </tbody>
